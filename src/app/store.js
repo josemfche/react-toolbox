@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import filesReducer from '../app/reducers/filesSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    filesState: filesReducer,
   },
 });
