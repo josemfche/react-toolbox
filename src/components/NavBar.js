@@ -38,11 +38,11 @@ const NavBar = () => {
 
     return (
         <div data-testid="navbar-1">
-            <Navbar className="fixed-top mb-3" bg="primary" variant="dark">
-                <Container>
+            <Navbar className="fixed-top mb-3" bg="light" variant="light">
+                <Container className='font-weight-bold'>
                     <Navbar.Brand href="#home">Data visualizer</Navbar.Brand>
                     <Nav className="me-auto d-flex align-items-center justify-content-center">
-                        <Button variant="danger" onClick={getData}>Get Data</Button>
+                        <Button variant="success" onClick={getData}>Get Data</Button>
                         {loading ? <Spinner className="mx-3" animation="grow" variant="danger" /> : <></>}
                     </Nav>
                 </Container>

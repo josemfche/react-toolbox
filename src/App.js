@@ -1,16 +1,16 @@
 import React from 'react';
 import NavBar from './components/NavBar'
 import TableDisplay from './components/TableDisplay'
-import Layaut from './components/Layaut';
+import Layout from './components/Layout';
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Layaut>
+    <div className="App bg-dark">
+      <Layout>
         <NavBar />
         <TableDisplay />
-      </Layaut>
+      </Layout>
     </div>
   );
 }

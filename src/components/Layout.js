@@ -9,8 +9,8 @@ const Layaut = ({ children }) => {
         <ThemeProvider
             breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
         >
-            <Container>
-                <Row className="justify-content-md-center">
+            <Container className="h-100" variant='dark'>
+                <Row className="justify-content-md-center align-items-center">
                     {children}
                 </Row>
             </Container>
